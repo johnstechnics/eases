@@ -1,0 +1,84 @@
+@import 'reset';
+@import "fonts";
+@import 'colors';
+
+body {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    color: $grey;
+}
+
+.container {
+    max-width: 1150px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section {
+    padding: 100px 20px;
+
+    &__header {
+        max-width: 750px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 53px;
+        text-align: center;
+        color: $dark;
+    }
+
+    &__desc {
+        margin-top: 50px;
+        line-height: 25px;
+        text-align: center;
+    }
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 45px;
+    padding: 0 20px;
+    color: $white;
+    border-radius: 30px;
+    background-color: $accent;
+    box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+    transition: .3s;
+
+    &:hover {
+        color: $white;
+        background-color: darken($accent, $amount: 10%);
+    }
+}
+
+@import 'header';
+@import 'about';
+@import 'standards';
+@import 'cases';
+@import 'projects';
+@import 'video';
+@import 'mailing';
+@import 'footer';
+
+@media (max-width: 991px) {
+
+    body.menu-open {
+        overflow-y: hidden;
+    }
+
+    .section {
+        &__title {
+            font-size: 28px;
+            line-height: 38px;
+        }
+    }
+
+}
