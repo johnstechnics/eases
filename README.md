@@ -10,4 +10,4 @@ Stack:
 - JS
 - Gulp
 
-![preview](https://github.com/johnstechnics/eases/blob/main/src/img/preview2.jpg)
+![preview](https://github.com/johnstechnics/eases/blob/main/src/img/preview.jpg)
